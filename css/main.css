@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: poppins, sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 101px 96px 342px;
+  background: #fff;
+  border-radius: 24px 24px 200px 24px;
+  padding: 56px;
+}
+.born-date{
+  display: flex;
+  gap:16px;
+}
+.born-date p{
+  width: max-content;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 5px;
+  color:#716F6F ;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+.born-date input{
+  width: 160px;
+  border-radius: 8px;
+  border: 1px solid #DCDCDC;
+  justify-content: center;
+  align-items: center;
+  padding:24px;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #151515;
+  outline: none;
+}
+.age{
+    width: 728px;
+}
+.age p {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 104px;
+  color: #151515;
+  letter-spacing: -2%;
+  line-height: 114px;
+}
+.age span {
+  color: #854dff;
+}
+
+.img {
+  width: 96px;
+  height: 96px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: #854dff;
+  position: absolute;
+  right: 0px;
+}
+img{
+    width: 44px;
+    height: 44px;
+}
+.img:hover {
+  cursor: pointer;
+  background-color: #151515;
+}
+.border::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #DCDCDC;
+    width: 632px;
+    top: 50%;
+    } 
+.borderimg{
+    position: relative;
+}
+@media (max-width:343px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 76px 64px 186px;
+        background: #fff;
+        border-radius: 24px 24px 100px 24px;
+        padding:24px;
+        gap: 32px;
+
+    }
+    .age{
+        max-width: 295px;}
+        .age p {
+            font-weight: 800;
+            font-style: italic;
+            font-size: 56px;
+            color: #151515;
+            letter-spacing: -2%;
+            line-height: 61px;
+          }
+          
+    .img{
+        max-width:64px;
+        max-height: 64px;
+        right: 40%;
+    }
+    img{
+        max-width: 24px;
+        max-height:24px ;
+    }
+    .border::after {
+        content: "";
+        position: absolute;
+        bottom: 3px;
+        height: 1px;
+        background-color: #DCDCDC;
+        max-width: 285px;
+        } 
+        .born-date p{
+          width: max-content;
+          font-weight: 700;
+          font-size: 12px;
+          letter-spacing: 5px;
+          color:#716F6F ;
+          text-transform: uppercase;
+          padding-bottom: 5px;
+        }
+        .born-date input{
+          max-width: 86px;
+          border-radius: 8px;
+          border: 1px solid #DCDCDC;
+          justify-content: center;
+          align-items: center;
+          padding:16px;
+          font-weight: 700;
+          font-size: 15px;
+          letter-spacing: 2px;
+          color: #151515;
+        }
+        input::placeholder{
+         opacity: 50%;
+        }
+      }
